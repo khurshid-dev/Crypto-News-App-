@@ -33,12 +33,13 @@ a:hover {
 }
 
 .main {
-  width: 80vw;
+  width: 100vw;
   min-height: 100%;
   position: relative;
 }
 .routes {
   padding: 20px;
+  height: 100%;
 }
 .nav-container {
   height: 100vh;
@@ -66,7 +67,7 @@ a:hover {
   background: #000 !important;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -103,9 +104,145 @@ a:hover {
 }
 
 :where(.css-dev-only-do-not-override-1i9hnpv).ant-menu-dark .ant-menu-item-selected {
-  background: rgb(189, 54, 240);
-  background: linear-gradient(90deg, rgba(189, 54, 240, 1) 31%, rgba(57, 81, 255, 1) 61%, rgba(4, 13, 255, 1) 100%);
+  background: rgb(189, 54, 240) !important;
+  background: linear-gradient(
+    90deg,
+    rgba(189, 54, 240, 1) 31%,
+    rgba(57, 81, 255, 1) 61%,
+    rgba(4, 13, 255, 1) 100%
+  ) !important;
 }
 :where(.css-dev-only-do-not-override-1i9hnpv).ant-card .ant-card-head {
   padding: 0 5px !important;
+}
+:where(.css-dev-only-do-not-override-1i9hnpv).ant-layout {
+  background: #ffffff !important;
+}
+
+.coin-detail-container {
+  margin: 30px;
+}
+
+.coin-heading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid var(--border);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 10px;
+}
+
+.coin-heading-container .coin-name {
+  font-weight: 900;
+  color: var(--pink);
+}
+
+.coin-heading-container p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.stats-container h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: var(--pink);
+}
+
+.coin-details-heading {
+  font-weight: 700 !important;
+  margin-top: 20px !important;
+  color: var(--pink) !important;
+}
+
+.coin-stats {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  font-size: 1rem;
+  opacity: 0.9;
+  padding: 20px;
+}
+
+.coin-stats-name {
+  display: flex;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.stats {
+  font-weight: 800;
+}
+
+.coin-value-statistics-heading p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.coin-desc-link {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+.coin-desc-link h2 {
+  font-weight: 700;
+  color: var(--pink);
+}
+
+.coin-desc-link p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.coin-desc-link a {
+  color: var(--pink);
+}
+
+.coin-desc-link h3 {
+  font-weight: 700;
+}
+
+.coin-desc {
+  flex: 0.5;
+}
+
+.coin-links {
+  padding: 0px 20px;
+  flex: 0.5;
+}
+
+.coin-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+  padding: 20px;
+}
+
+.link-name {
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.coin-link a {
+  color: var(--pink);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.coin-link:hover,
+.coin-stats:hover {
+  background-color: var(--bgSecondary);
 }

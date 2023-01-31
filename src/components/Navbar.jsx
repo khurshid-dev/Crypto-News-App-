@@ -4,6 +4,8 @@ import { HomeOutlined, FundOutlined, MoneyCollectOutlined, BulbOutlined } from "
 import { Menu } from "antd";
 import logo from "../images/logo.png";
 
+const { Item } = Menu;
+
 const Navbar = () => {
   return (
     <div className="nav-container">
@@ -13,18 +15,18 @@ const Navbar = () => {
         </Link>
       </div>
       <Menu theme="dark">
-        <Menu.Item icon={<HomeOutlined />}>
+        <Item icon={<HomeOutlined />}>
           <Link to="/">Home</Link>
-        </Menu.Item>
-        <Menu.Item icon={<FundOutlined />}>
+        </Item>
+        <Item icon={<FundOutlined />}>
           <Link to="/cryptocurrencise">Cryptocurrencise</Link>
-        </Menu.Item>
-        <Menu.Item icon={<MoneyCollectOutlined />}>
+        </Item>
+        <Item icon={<MoneyCollectOutlined />}>
           <Link to="/exchanges">Exchanges</Link>
-        </Menu.Item>
-        <Menu.Item icon={<BulbOutlined />}>
+        </Item>
+        <Item icon={<BulbOutlined />}>
           <Link to="/news">News</Link>
-        </Menu.Item>
+        </Item>
       </Menu>
     </div>
   );

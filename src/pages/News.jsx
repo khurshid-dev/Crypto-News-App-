@@ -18,7 +18,6 @@ const News = ({ simplified }) => {
 
   const { data: cryptoNews } = useGetCryptoNewsQuery({ newsCategory, count: simplified ? 6 : 14 });
   const { data } = useGetCryptosQuery(50);
-  console.log(cryptoNews?.value);
 
   const { Title } = Typography;
   return (

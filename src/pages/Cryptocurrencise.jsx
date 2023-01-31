@@ -18,7 +18,6 @@ const Cryptocurrencise = ({ simplified }) => {
     );
     setCryptos(filterCryptos);
   }, [cryptosList, searchTerm]);
-
   if (isFetching) return <Loader />;
   return (
     <>
